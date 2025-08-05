@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fake Email OTP Verifier</title>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Heading -->
+        <h1>Email OTP Verifier</h1>
+        <!-- Input Email -->
+        <input type="email"  id="email" placeholder="Enter your email">
+        <!-- Button For Send OTP -->
+        <button onclick="sendotp()">Send OTP</button>
+        <!-- New Div For Verify OTP  -->
+        <div id="otp-section" style="display: none;">
+            <!-- P Tag For Show OTP num -->
+            <p><strong>Your OTP is : </strong> <span id="showotp"></span></p>
+            <!-- Input Tag for Enter OTP -->
+            <input type="text" id="otpnum" placeholder="Enter OTP">
+            <!-- Button For Verify OTP -->
+            <button onclick="verifyOTP()">Verify OTP</button>
+        </div>
+        <!-- P Tag for Show Messsage -->
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
